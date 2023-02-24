@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import { Auth } from "./components/auth";
-import { db, auth, storage } from "./services/firebase";
+import { Auth } from "./services/firebase/module/auth";
+import { db, auth, storage } from "./services/firebase/config/firebase";
 import {
   getDocs,
   collection,
@@ -36,6 +36,7 @@ function App() {
         id: doc.id,
       }));
       setMovieList(filteredData);
+      console.log(data);
     } catch (err) {
       console.error(err);
     }

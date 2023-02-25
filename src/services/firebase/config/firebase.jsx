@@ -7,20 +7,20 @@ import { getFunctions } from "firebase/functions";
 import { getRemoteConfig } from "firebase/remote-config";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB8FEC-LVWj5Cc7lMtpTXeuNaJA1zF17ZA",
-  authDomain: "kaldin-villa.firebaseapp.com",
-  projectId: "kaldin-villa",
-  storageBucket: "kaldin-villa.appspot.com",
-  messagingSenderId: "849328562416",
-  appId: "1:849328562416:web:412b080b502744faa92235",
-  measurementId: "G-T7Y1Z34LQL"
+  apiKey: process.env.REACT_APP_Api_Key_Firebase,
+  authDomain: process.env.REACT_APP_AuthDomain_Firebase,
+  projectId: process.env.REACT_APP_ProjectId_Firebase,
+  storageBucket: process.env.REACT_APP_StorageBucket_Firebase,
+  messagingSenderId: process.env.REACT_APP_MessagingSenderId_Firebase,
+  appId: process.env.REACT_APP_AppId_Firebase,
+  measurementId:process.env.REACT_APP_MeasurementId_Firebase
 };
 
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 export const googleProvider = new GoogleAuthProvider();
 export const analytics = getAnalytics(app);
-export const db = getFirestore(app);
+export const firestore = getFirestore(app);
 export const storage = getStorage(app);
 export const functions = getFunctions(app);
-export const remoteConfig = getRemoteConfig(app);
+export const remoteConfig = getRemoteConfig(app); 

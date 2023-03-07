@@ -1,39 +1,29 @@
-import React from 'react'
-import { Header } from './containers';
-import { Navbar } from './components';
+import React from 'react';
 import './App.css';
 
-const App = () => (
-  <div className="App">
-    <div className="gradient__bg">
-      <Navbar />
-      <Header />
+function App() {
+  return (
+    <div className="homepage">
+      <div className="column__navbar">
+        <div className="content">
+          <h2>Column 1</h2>
+          <p>This is the content for column 1.</p>
+        </div>
+      </div>
+      <div className="column__content">
+        <div className="content">
+            <h2>Column 1</h2>
+            <p>This is the content for column 1.</p>
+          </div>
+      </div>
+      <div className="column__profile">
+        <div className="content">
+            <h2>Column 1</h2>
+            <p>This is the content for column 1.</p>
+          </div>
+      </div>
     </div>
-  </div>
-);
+  );
+}
 
-export default App
-
-// import { useState } from "react";
-// import { uploadFile } from "./services/firebase/module/Storage";
-
-// function App() {
-
-//   // File Upload State
-//   const [fileUpload, setFileUpload] = useState(null);
-
-//   const handleUpload = () => {
-//     uploadFile(fileUpload, process.env.REACT_APP_FilePath_Firebase);
-//   }
-
-//   return (
-//     <div className="App">
-//       <div>
-//         <input type="file" onChange={(e) => setFileUpload(e.target.files[0])} />
-//         <button onClick={handleUpload}> Upload File </button>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default App;
+export default App;

@@ -27,7 +27,7 @@ export const Auth = (email, password) => {
   };
 };
 
-async function signInFun(email, password) {
+export async function signInFun(email, password) {
   try {
     await createUserWithEmailAndPassword(auth, email, password);
       console.log(`User ${auth?.currentUser?.displayName} successfully logged in.`);

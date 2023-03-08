@@ -1,4 +1,6 @@
 import React from 'react';
+import Header from './components/header/Header';
+import logo from './assets/logo.png';
 import './App.css';
 
 function App() {
@@ -6,20 +8,17 @@ function App() {
     <div className="homepage">
       <div className="column__navbar">
         <div className="content">
-          <h2>Column 1</h2>
-          <p>This is the content for column 1.</p>
+          <Header title="Skull King" subtext="Firebase Integration" imageref={logo}/>
+          <div className="grey-line"/>
+          {/* <Social/> */}
         </div>
       </div>
       <div className="column__content">
         <div className="content">
-            <h2>Column 1</h2>
-            <p>This is the content for column 1.</p>
           </div>
       </div>
       <div className="column__profile">
         <div className="content">
-            <h2>Column 1</h2>
-            <p>This is the content for column 1.</p>
           </div>
       </div>
     </div>

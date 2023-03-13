@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './components/header/Header';
 import logo from './assets/logo.png';
 import './App.css';
@@ -19,10 +19,14 @@ function App() {
       </div>
       <div className="column__profile">
         <div className="content">
+          <div>
           </div>
+        </div>
       </div>
     </div>
   );
 }
 
 export default App;
+
+

@@ -2,9 +2,14 @@ import './header.css';
 
 const Header = ({title, subtext, imageref}) => (
   <div className='container'>
-    <img class="image" src={imageref} alt='header image' />
-    <h1 className='title'>{title}</h1>
-    <p className='subtitle'>{subtext}</p>
+    <img className='container__logo'
+        src={imageref}
+        alt="logo image"
+      />
+      <div style={{ display: 'inline-block', marginLeft: '30px' }}>
+        <h2 className='container__title'>{title}</h2>
+        <p className='container__subtitle'>{subtext}</p>
+      </div>
   </div>
 );
 

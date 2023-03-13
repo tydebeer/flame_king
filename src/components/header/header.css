@@ -1,22 +1,20 @@
 .container {
+  display: 'inline-block';
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
-.title {
+.container__title {
   font-weight: bold;
-  background-color: bisque;
-  width: 100%;
-  margin-right: 10px;
+  font-size: 20px;
 }
 
-.subtitle {
-  margin-right: 10px;
-  background-color: rgb(113, 96, 74);
+.container__subtitle {
+  font-size: 16px;
 }
 
-.image {
+.container__logo {
   margin-right: 10px;
   width: 50px;
-  background-color: rgb(196, 255, 243);
+  height: 50px;
 }
